@@ -1,3 +1,4 @@
+
 常用HTML标签元素结合及简介.
 HTML 框架:
 http://www.w3school.com.cn/html/html_frames.asp
@@ -190,13 +191,101 @@ HTML <span> 元素是内联元素，可用作文本的容器。
 <span> 元素也没有特定的含义。
 当与 CSS 一同使用时，<span> 元素可用于为部分文本设置样式属性。
 
+<base target="_blank" />加在head,使用 base 标签使页面中的所有标签在新窗口中打开。
+<meta name="generator"content="Dreamweaver 8.0en">使用 <meta> 元素来描述文档。
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="description"content="HTML examples">
+定义关键字:
+<meta name="keywords"content="HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript">
+<p>对不起。我们已经搬家了。您的 URL 是 <a href="http://www.w3school.com.cn">http://www.w3school.com.cn</a></p>重定向网址
+以下标签都可以添加到 head 部分：<title>、<base>、<link>、<meta>、<script> 以及 <style>。
+title 元素在所有 HTML/XHTML 文档中都是必需的。title 元素能够：
+定义浏览器工具栏中的标题
+提供页面被添加到收藏夹时显示的标题
+显示在搜索引擎结果中的页面标题
 
+<base> 标签为页面上的所有链接规定默认地址或默认目标（target）：
+<head>
+<base href="http://www.w3school.com.cn/images/" />
+<base target="_blank" />
+</head>
+<script> 标签用于定义客户端脚本，比如 JavaScript。
+HTML 头部元素
+标签	描述
+<head>	定义关于文档的信息。
+<title>	定义文档标题。
+<base>	定义页面上所有链接的默认地址或默认目标。
+<link>	定义文档与外部资源之间的关系。
+<meta>	定义关于 HTML 文档的元数据。
+<script>定义客户端脚本。
+<style>	定义文档的样式信息。
 
+HTML script 元素
+<script> 标签用于定义客户端脚本，比如 JavaScript。
+script 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。
+必需的 type 属性规定脚本的 MIME 类型。
+JavaScript 最常用于图片操作、表单验证以及内容动态更新。
+下面的脚本会向浏览器输出“Hello World!”：
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+提示：如果需要学习更多有关在 HTML 中编写脚本的知识，请访问我们的 JavaScript 教程。
+<noscript> 标签
+<noscript> 标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。
+noscript 元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。
+只有在浏览器不支持脚本或者禁用脚本时，才会显示 noscript 元素中的内容：
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
 
+不间断空格(&nbsp;)。
+HTML符号手册:
+http://www.w3school.com.cn/tags/html_ref_entities.html
+HTML 中有用的字符实体
+注释：实体名称对大小写敏感！
+显示结果	描述	实体名称	实体编号
+ 	空格	&nbsp;	&#160;
+<	小于号	&lt;	&#60;
+>	大于号	&gt;	&#62;
+&	和号	&amp;	&#38;
+"	引号	&quot;	&#34;
+'	撇号 	&apos; (IE不支持)	&#39;
+￠	分	&cent;	&#162;
+£	镑	&pound;	&#163;
+¥	日圆	&yen;	&#165;
+€	欧元	&euro;	&#8364;
+§	小节	&sect;	&#167;
+©	版权	&copy;	&#169;
+®	注册商标	&reg;	&#174;
+™	商标	&trade;	&#8482;
+×	乘号	&times;	&#215;
+÷	除号	&divide;	&#247;
 
+URL - Uniform Resource Locator
+当您点击 HTML 页面中的某个链接时，对应的 <a> 标签指向万维网上的一个地址。
+统一资源定位器（URL）用于定位万维网上的文档（或其他数据）。
+网址，比如 http://www.w3school.com.cn/html/index.asp，遵守以下的语法规则：
+scheme://host.domain:port/path/filename
+解释：
+scheme - 定义因特网服务的类型。最常见的类型是 http
+host - 定义域主机（http 的默认主机是 www）
+domain - 定义因特网域名，比如 w3school.com.cn
+:port - 定义主机上的端口号（http 的默认端口号是 80）
+path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。
+filename - 定义文档/资源的名称
+编者注：URL 的英文全称是 Uniform Resource Locator，中文也译为“统一资源定位符”。
 
-
-
+HTML 4.01 多媒体标签
+标签	描述
+<applet>	不赞成。定义内嵌 applet。
+<embed>	HTML4 中不赞成，HTML5 中允许。定义内嵌对象。
+<object>	定义内嵌对象。
+<param>	定义对象的参数。
+HTML 5 多媒体标签
+标签	描述
+<audio>	标签定义声音，比如音乐或其他音频流。
+<embed>	标签定义嵌入的内容，比如插件。
 
 
 
